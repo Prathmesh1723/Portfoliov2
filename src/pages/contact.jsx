@@ -1,5 +1,6 @@
 import React, { useEffect } from "react";
 import { Helmet } from "react-helmet";
+import mailgun from 'mailgun.js';
 
 import NavBar from "../components/common/navBar";
 import Footer from "../components/common/footer";
@@ -10,6 +11,15 @@ import INFO from "../data/user";
 import SEO from "../data/seo";
 
 import "./styles/contact.css";
+
+const handleSubmit = (e) => {
+	e.preventDefault();
+	const name = e.target.elements.name.value;
+	const email = e.target.elements.email.value;
+	const message = e.target.elements.message.value;
+	const mailtoLink = `mailto:${INFO.main.email}?subject=New Message from ${name}&body=${encodeURIComponent(`Name: ${name}\nEmail: ${email}\n\n${message}`)}`;
+	window.location.href = mailtoLink;
+  };
 
 const Contact = () => {
 	useEffect(() => {
@@ -70,6 +80,24 @@ const Contact = () => {
 							followers there, so don't hesitate to reach out.
 							Thanks again for your interest, and I look forward
 							to hearing from you!
+						</div>
+
+						<div className="contact-form-container" onSubmit={handleSubmit}>
+						<form className="contact-form">
+							<div className="form-group">
+							<label htmlFor="name">Name</label>
+							<input type="text" id="name" name="name" placeholder="Enter your name" required />
+							</div>
+							<div className="form-group">
+							<label htmlFor="email">Email</label>
+							<input type="email" id="email" name="email" placeholder="Enter your email" required />
+							</div>
+							<div className="form-group">
+							<label htmlFor="message">Message</label>
+							<textarea id="message" name="message" rows="5" placeholder="Enter your message" required></textarea>
+							</div>
+							<button type="submit" className="submit-btn">Submit</button>
+						</form>
 						</div>
 					</div>
 
