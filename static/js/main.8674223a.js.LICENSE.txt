@@ -4,6 +4,8 @@ object-assign
 @license MIT
 */
 
+/*! For license information please see mailgun.web.js.LICENSE.txt */
+
 /**
  * @license React
  * react-dom.production.min.js
