@@ -3,7 +3,7 @@ const INFO = {
 		title: "",
 		name: "Prathmesh P.",
 		email: "prathmesh.pardeshi1709@gmail.com",
-		logo: "../logo.png",
+		logo: "logo.png",
 	},
 
 	socials: {
@@ -38,7 +38,7 @@ const INFO = {
 			title: "Learning Management System",
 			description:
 				"Created a secure Learning Management System (LMS) and deployed it on AWS using Terraform for smooth operations. Set up continuous integration and delivery (CI/CD) pipelines with GitHub Actions and mocha testing. Improved monitoring and issue resolution with CloudWatch. Integrated email automation and traffic scaling for efficient performance.",
-			logo: "./awss.png",
+			logo: "awss.png",
 			linkText: "View Project",
 			link: "https://github.com",
 		},
@@ -47,7 +47,7 @@ const INFO = {
 			title: "Residential Management System",
 			description:
 				"Created a Residential Management System using MySQL and Oracle databases on RDS, managed through GitHub. Built features for lease, rent, and maintenance tracking with PL/SQL. Improved system reliability with better error handling and ensured data security by managing access rights and following database transaction standards.",
-			logo: "/sql.png",
+			logo: "sql.png",
 			linkText: "View Project",
 			link: "https://github.com",
 		},
@@ -56,7 +56,7 @@ const INFO = {
 			title: "RentPe Website",
 			description:
 				"Developed a comprehensive Rental Platform using JavaScript, React, and Bootstrap, managed via GitHub. Enabled house renting and buying with a wide range of listings, deployed on Heroku. Utilized React, Sass, Bootstrap, and Redux for frontend development. Implemented Node.js Express with CORS Authentication and Bcryptjs for security, along with Mongoose ODM.",
-			logo: "/react.jpg",
+			logo: "react.jpg",
 			linkText: "View Project",
 			link: "https://github.com",
 		},
